@@ -1,0 +1,42 @@
+git status                                  # check you are on your feature branch
+git fetch origin                          # pulls the entire project with all branches, including master
+git merge origin/master            # merges master into your local feature branch
+git push                                    # push your local feature branch to remote feature branch
+
+ 
+
+ 
+git checkout -- .  (to ignore all commits on local branch)
+
+ 1959  git fetch origin
+ 1960  git merge origin/master
+ 1961  git status
+ 1962  git push
+ 1963  git checkout master                   (workaround to merge when gitlab UI is broken)
+ 1964  git status
+ 1965  git merge --no-ff drop_capture_issue  (workaround to merge when gitlab UI is broken)
+ 1966  git push origin master                (workaround to merge when gitlab UI is broken)
+ 1967  git status
+ 1968  git checkout drop_capture_issue       (workaround to merge when gitlab UI is broken)
+ 1969  git status
+
+
+git add .
+git commit -m “useful message”
+git push
+
+git clone <git-link> -b issue-46
+
+-------
+
+Reset local changes
+
+git fetch --all
+git reset --hard origin/master
+git pull
+
+-------------
+
+ git rm -r --cached .
+ git add .
+ git commit -m ".gitignore fix"
