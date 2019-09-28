@@ -1,46 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <title>Fetch API</title>
-  </head>
-  <body>
-    <div class="container">
-      <h2 class="mt-4 mb-4">Fetch API</h2>
-      <div class="d-flex">
-        <button id="getText" class="btn btn-primary mr-2">Get Text</button>
-        <button id="getUsers" class="btn btn-success mr-2">Get JSON</button>
-        <button id="getPosts" class="btn btn-info">Get JSON from API</button>
-      </div>
-      <hr />
-      <div id="output"></div>
-      <h2>Fetch POST Request</h2>
-      <form id="addPost">
-        <div class="form-group">
-          <input
-            type="text"
-            id="title"
-            class="form-control"
-            placeholder="Enter Title"
-          />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Auto Complete App</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row col-md-6 m-auto">
+            <h3 class="text-center mb-3">State Capital Lookup</h3>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-lg" id="search" placeholder="Enter State or Abbrevation">
+            </div>
+            <div id="match-list"></div>
         </div>
-        <div class="form-group">
-          <textarea
-            type="text"
-            id="body"
-            class="form-control"
-            placeholder="Enter Body"
-          ></textarea>
-        </div>
-        <input type="submit" class="btn btn-secondary" value="Add Post" />
-      </form>
     </div>
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
